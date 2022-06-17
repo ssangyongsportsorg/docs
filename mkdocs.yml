@@ -19,16 +19,16 @@
 # IN THE SOFTWARE.
 
 # Project information
-site_name: 雙龍體育幫助
+site_name: 雙龍體育幫助文檔
 site_url: https://squidfunk.github.io/mkdocs-material/
 site_author: Martin Donath
 site_description: >-
-  直接從我們的團隊獲得説明....
+  Create a branded static site from a set of Markdown files to host the
+  documentation of your Open Source or commercial project
 
 # Repository
-repo_name: squidfunk/mkdocs-material
-repo_url: https://github.com/squidfunk/mkdocs-material
-
+repo_name: ssangyongsports/mkdocs-material
+repo_url: https://github.com/ssangyongsports/mkdocs-material
 # Copyright
 copyright: Copyright &copy; 2016 - 2022 Martin Donath
 
@@ -46,7 +46,7 @@ theme:
   search_index_only: true
 
   # Default values, taken from mkdocs_theme.yml
-  language: zh-TW
+  language: zh-tw
   features:
     - content.code.annotate
     # - content.tabs.link
@@ -107,7 +107,7 @@ extra:
     provider: google
     property: !ENV GOOGLE_ANALYTICS_KEY
   social:
-     - icon: fontawesome/brands/github
+    - icon: fontawesome/brands/github
       link: https://github.com/squidfunk
     - icon: fontawesome/brands/gitter
       link: https://gitter.im/squidfunk/mkdocs-material
