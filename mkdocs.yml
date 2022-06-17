@@ -216,8 +216,8 @@ nav:
   - Insiders:
     - insiders/index.md
     - Getting started:
-      - Installation: insiders/getting-started.md
-      - Changelog: insiders/changelog.md
+      - Installation: insiders/聯繫.md.md
+      - Changelog: insiders/聯繫.md
   - Blog:
     - blog/index.md
     - 2022:
