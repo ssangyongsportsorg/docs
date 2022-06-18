@@ -1,7 +1,7 @@
 ## 社區發文
-!!! note 
+!!! note    請勿連續亂發溫以免被ban
 
-   請勿連續亂發溫以免被ban
+
 1.在[首頁](https://community.ssangyongsports.eu.org/)點擊[發文](https://community.ssangyongsports.eu.org/composer)
 
 2.填寫標題
