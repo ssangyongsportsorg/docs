@@ -1,4 +1,3 @@
-
 # Copyright (c) 2016-2021 Martin Donath <martin.donath@squidfunk.com>
 
 # Permission is hereby granted, free of charge, to any person obtaining a copy
@@ -28,12 +27,12 @@ site_description: >-
   documentation of your Open Source or commercial project – customizable,
   searchable, mobile-friendly, 40+ languages
 # Repository
-repo_name: ssangyongsports/mkdocs-material
-repo_url: https://github.com/ssangyongsports/mkdocs-material
-edit_uri: "https://github.com/ssangyongsports/mkdocs-material"
+repo_name: squidfunk/mkdocs-material
+repo_url: https://github.com/squidfunk/mkdocs-material
+edit_uri: ""
 
 # Copyright
-copyright: Copyright &copy; 2016 - 2022 
+copyright: Copyright &copy; 2016 - 2021 Martin Donath
 
 # Configuration
 theme:
@@ -154,10 +153,10 @@ markdown_extensions:
 
 # Page tree
 nav:
-  - Home: index.md
+ - Home: index.md
   - 支援文檔:
-    - 介紹: 介紹.md
-    - 如何聯繫: 如何聯繫.md
+  - 介紹: 介紹.md
+  - 如何聯繫: 如何聯繫.md
 
 # Google Analytics
 google_analytics:
