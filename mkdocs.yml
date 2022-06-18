@@ -94,35 +94,14 @@ plugins:
 
 # Customization
 extra:
-    feedback:
-      title: Was this page helpful?
-      ratings:
-        - icon: material/emoticon-happy-outline
-          name: This page was helpful
-          data: 1
-          note: >-
-            Thanks for your feedback!
-        - icon: material/emoticon-sad-outline
-          name: This page could be improved
-          data: 0
-          note: >- 
-            Thanks for your feedback! Help us improve this page by
-            using our <a href="..." target=_blank>feedback form</a>.  
   generator: false
   social:
-    - icon: fontawesome/brands/github
-      link: https://github.com/squidfunk
-    - icon: fontawesome/brands/gitter
-      link: https://gitter.im/squidfunk/mkdocs-material
-    - icon: fontawesome/brands/docker
-      link: https://hub.docker.com/r/squidfunk/mkdocs-material/
+    - icon: fontawesome/brands/facebook
+      link: https://www.facebook.com/ssangyongsports/
     - icon: fontawesome/brands/twitter
-      link: https://twitter.com/squidfunk
-    - icon: fontawesome/brands/linkedin
-      link: https://linkedin.com/in/squidfunk/
+      link: https://twitter.com/ssangyongsport
     - icon: fontawesome/brands/instagram
-      link: https://instagram.com/squidfunk
-
+      link: https://www.instagram.com/ssangyong_sports/
 # Extensions
 markdown_extensions:
   - admonition
