@@ -150,7 +150,8 @@ nav:
     - 介紹: 介紹.md
     - 如何聯繫: 如何聯繫.md
   - 社區問題:
-    - 加入社區: 加入社區.md
+    -加入社區: 加入社區.md
+    -發文: cnewtab.md
   
 # Google Analytics
 google_analytics:
