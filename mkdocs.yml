@@ -48,7 +48,7 @@ theme:
   search_index_only: true
 
   # Default values, taken from mkdocs_theme.yml
-  language: zh-tw
+  language: zh-TW
   features:
     # - navigation.instant
     - navigation.sections
