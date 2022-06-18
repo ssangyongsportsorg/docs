@@ -20,13 +20,13 @@
 
 # Project information
 site_name: 雙龍體育支援文檔
-site_url: https://squidfunk.github.io/mkdocs-material/
+site_url: https://github.com/ssangyongsports/mkdocs-material/
 site_author: Martin Donath
 site_description: >-
   立刻查看文章
 # Repository
-repo_name: squidfunk/mkdocs-material
-repo_url: https://github.com/squidfunk/mkdocs-material
+repo_name: ssangyongsports/mkdocs-material
+repo_url: https://github.com/ssangyongsports/mkdocs-material/
 edit_uri: ""
 
 # Copyright
