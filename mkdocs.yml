@@ -23,9 +23,7 @@ site_name: 雙龍體育支援文檔
 site_url: https://squidfunk.github.io/mkdocs-material/
 site_author: Martin Donath
 site_description: >-
-  Create a branded static site from a set of Markdown files to host the
-  documentation of your Open Source or commercial project – customizable,
-  searchable, mobile-friendly, 40+ languages
+  立刻查看文章
 # Repository
 repo_name: squidfunk/mkdocs-material
 repo_url: https://github.com/squidfunk/mkdocs-material
@@ -68,7 +66,7 @@ theme:
   font:
     text: Roboto
     code: Roboto Mono
-  favicon: assets/favicon.png
+  favicon: https://i.ibb.co/DVxvsXV/2022-02-28-004341-removebg-preview-1-1.png
   icon:
     logo: logo
 
