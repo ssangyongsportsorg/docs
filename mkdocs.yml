@@ -33,6 +33,7 @@ edit_uri: ""
 copyright: Copyright &copy;2022雙龍體育
 # Configuration
 theme:
+  logo: https://img.ssangyongsports.eu.org/logo.svg.png
   name: null
   custom_dir: material
 
