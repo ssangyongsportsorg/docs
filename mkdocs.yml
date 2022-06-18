@@ -1,4 +1,5 @@
-# Copyright (c) 2016-2019 Martin Donath <martin.donath@squidfunk.com>
+
+# Copyright (c) 2016-2021 Martin Donath <martin.donath@squidfunk.com>
 
 # Permission is hereby granted, free of charge, to any person obtaining a copy
 # of this software and associated documentation files (the "Software"), to
@@ -20,24 +21,26 @@
 
 # Project information
 site_name: Material for MkDocs
-site_description: A Material Design theme for MkDocs
-site_author: Martin Donath
 site_url: https://squidfunk.github.io/mkdocs-material/
-
+site_author: Martin Donath
+site_description: >-
+  Create a branded static site from a set of Markdown files to host the
+  documentation of your Open Source or commercial project – customizable,
+  searchable, mobile-friendly, 40+ languages
 # Repository
 repo_name: squidfunk/mkdocs-material
 repo_url: https://github.com/squidfunk/mkdocs-material
 edit_uri: ""
 
 # Copyright
-copyright: 'Copyright &copy; 2016 - 2019 Martin Donath'
+copyright: Copyright &copy; 2016 - 2021 Martin Donath
 
 # Configuration
 theme:
   name: null
   custom_dir: material
 
-  # 404 page
+  # Static files
   static_templates:
     - 404.html
 
@@ -47,54 +50,90 @@ theme:
 
   # Default values, taken from mkdocs_theme.yml
   language: en
-  feature:
-    tabs: true
+  features:
+    # - navigation.instant
+    - navigation.sections
+    - navigation.tabs
   palette:
-    primary: indigo
-    accent: indigo
+    - scheme: default
+      primary: indigo
+      accent: indigo
+      toggle:
+        icon: material/toggle-switch-off-outline
+        name: Switch to dark mode
+    - scheme: slate
+      primary: red
+      accent: red
+      toggle:
+        icon: material/toggle-switch
+        name: Switch to light mode
   font:
     text: Roboto
     code: Roboto Mono
-  favicon: assets/images/favicon.png
-  logo:
-    icon: "\uE80C"
+  favicon: assets/favicon.png
+  icon:
+    logo: logo
 
 # Plugins
 plugins:
   - search
+  - redirects:
+      redirect_maps:
+        changelog/insiders.md: insiders/changelog.md
+        extensions/admonition.md: reference/admonitions.md
+        extensions/codehilite.md: reference/code-blocks.md
+        extensions/footnotes.md: reference/footnotes.md
+        extensions/metadata.md: reference/meta-tags.md
+        extensions/permalinks.md: setup/setting-up-navigation.md #permalink
+        extensions/pymdown.md: reference/admonitions.md
+        plugins/revision-date.md: setup/adding-a-git-repository.md #revision-date
+        plugins/search.md: setup/setting-up-site-search.md
+        releases/4.md: upgrading.md #upgrading-from-4x-to-5x
+        releases/5.md: upgrading.md #upgrading-from-3x-to-4x
+        releases/changelog.md: changelog.md
+        setup/adding-social-links.md: setup/setting-up-the-footer.md
+        sponsorship.md: insiders/index.md
   - minify:
       minify_html: true
 
 # Customization
 extra:
   social:
-    - type: globe
-      link: http://struct.cc
-    - type: github-alt
+    - icon: fontawesome/brands/github
       link: https://github.com/squidfunk
-    - type: twitter
+    - icon: fontawesome/brands/gitter
+      link: https://gitter.im/squidfunk/mkdocs-material
+    - icon: fontawesome/brands/docker
+      link: https://hub.docker.com/r/squidfunk/mkdocs-material/
+    - icon: fontawesome/brands/twitter
       link: https://twitter.com/squidfunk
-    - type: linkedin
-      link: https://linkedin.com/in/squidfunk
+    - icon: fontawesome/brands/linkedin
+      link: https://linkedin.com/in/squidfunk/
+    - icon: fontawesome/brands/instagram
+      link: https://instagram.com/squidfunk
 
 # Extensions
 markdown_extensions:
-  - markdown.extensions.admonition
-  - markdown.extensions.codehilite:
-      guess_lang: false
-  - markdown.extensions.def_list
-  - markdown.extensions.footnotes
-  - markdown.extensions.meta
-  - markdown.extensions.toc:
+  - admonition
+  - abbr
+  - attr_list
+  - def_list
+  - footnotes
+  - meta
+  - md_in_html
+  - toc:
       permalink: true
-  - pymdownx.arithmatex
+  - pymdownx.arithmatex:
+      generic: true
   - pymdownx.betterem:
       smart_enable: all
   - pymdownx.caret
   - pymdownx.critic
   - pymdownx.details
   - pymdownx.emoji:
-      emoji_generator: !!python/name:pymdownx.emoji.to_svg
+      emoji_index: !!python/name:materialx.emoji.twemoji
+      emoji_generator: !!python/name:materialx.emoji.to_svg
+  - pymdownx.highlight
   - pymdownx.inlinehilite
   - pymdownx.keys
   - pymdownx.magiclink:
@@ -103,29 +142,66 @@ markdown_extensions:
       repo: mkdocs-material
   - pymdownx.mark
   - pymdownx.smartsymbols
-  - pymdownx.superfences
+  - pymdownx.superfences:
+      custom_fences:
+        - name: mermaid
+          class: mermaid
+          format: !!python/name:pymdownx.superfences.fence_code_format
+  - pymdownx.tabbed
   - pymdownx.tasklist:
       custom_checkbox: true
   - pymdownx.tilde
 
 # Page tree
 nav:
-  - Material: index.md
-  - Getting started: getting-started.md
-  - Extensions:
-    - Admonition: extensions/admonition.md
-    - CodeHilite: extensions/codehilite.md
-    - Footnotes: extensions/footnotes.md
-    - Metadata: extensions/metadata.md
-    - Permalinks: extensions/permalinks.md
-    - PyMdown: extensions/pymdown.md
-  - Specimen: specimen.md
-  - Customization: customization.md
-  - Compliance with GDPR: compliance.md
-  - Release notes: release-notes.md
-  - Author's notes: authors-notes.md
-  - Contributing: contributing.md
-  - License: license.md
+  - Home: index.md
+  - Getting started:
+    - Installation: getting-started.md
+    - Creating your site: creating-your-site.md
+    - Publishing your site: publishing-your-site.md
+    - Customization: customization.md
+    - Troubleshooting: troubleshooting.md
+    - Data privacy: data-privacy.md
+    - License: license.md
+    - Releases:
+      - Changelog: changelog.md
+      - Upgrade guide: upgrading.md
+      - Deprecations: deprecations.md
+  - Setup:
+    - Changing the colors: setup/changing-the-colors.md
+    - Changing the fonts: setup/changing-the-fonts.md
+    - Changing the language: setup/changing-the-language.md
+    - Changing the logo and icons: setup/changing-the-logo-and-icons.md
+    - Setting up navigation: setup/setting-up-navigation.md
+    - Setting up site search: setup/setting-up-site-search.md
+    - Setting up site analytics: setup/setting-up-site-analytics.md
+    - Setting up tags: setup/setting-up-tags.md
+    - Setting up versioning: setup/setting-up-versioning.md
+    - Setting up the header: setup/setting-up-the-header.md
+    - Setting up the footer: setup/setting-up-the-footer.md
+    - Adding a git repository: setup/adding-a-git-repository.md
+    - Adding a comment system: setup/adding-a-comment-system.md
+  - Reference:
+    - Abbreviations: reference/abbreviations.md
+    - Admonitions: reference/admonitions.md
+    - Buttons: reference/buttons.md
+    - Code blocks: reference/code-blocks.md
+    - Content tabs: reference/content-tabs.md
+    - Data tables: reference/data-tables.md
+    - Diagrams: reference/diagrams.md
+    - Footnotes: reference/footnotes.md
+    - Formatting: reference/formatting.md
+    - Icons + Emojis: reference/icons-emojis.md
+    - Images: reference/images.md
+    - Lists: reference/lists.md
+    - MathJax: reference/mathjax.md
+    - Meta tags: reference/meta-tags.md
+    - Variables: reference/variables.md
+  - Insiders:
+    - Sponsorship: insiders/index.md
+    - Getting started:
+      - Installation: insiders/getting-started.md
+      - Changelog: insiders/changelog.md
 
 # Google Analytics
 google_analytics:
