@@ -27,9 +27,9 @@
     {% endblock %}
     {% block htmltitle %}
       {% if page.meta and page.meta.title %}
-        <title>{{ page.meta.title }} - {{ config.site_name }}</title>
+        <title>{{ 首頁 }} - {{ config.site_name }}</title>
       {% elif page.title and not page.is_homepage %}
-        <title>{首頁首頁 }} - {{ config.site_name }}</title>
+        <title>{{page.meta.title}} - {{ config.site_name }}</title>
       {% else %}
         <title>{{ config.site_name }}</title>
       {% endif %}
