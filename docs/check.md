@@ -1,6 +1,7 @@
 # 如何查詢工單狀態
-如果您是使用聯繫表單聯絡我們請點此：https://ssport.cf/T
-如果您是使用電子郵件聯絡我們請點此：https://ssport.cf/S
+1.如果您是使用聯繫表單聯絡我們請點此：https://ssport.cf/T
+
+2.如果您是使用電子郵件聯絡我們請點此：https://ssport.cf/S
 # 教學
 #### 1.打開我們向你傳送的聯繫通知Mail
 ![](https://i.imgur.com/ZjzxGqg.png)
