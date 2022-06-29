@@ -1,4 +1,6 @@
-# BUG反饋https://github.com/ssangyongsportsorg/support/pulls
+# 幫助修改文章：https://github.com/ssangyongsportsorg/docs/tree/main/docs
+# 修改後進行分叉
+# BUG反饋https://github.com/ssangyongsportsorg/docs/pulls
 
 
 
